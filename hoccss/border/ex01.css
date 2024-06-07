@@ -1,0 +1,49 @@
+/* 
+    Border Css: Them vien o the html
+    - border-width: Định nghĩa độ dày của đường viền.
+    - border-style: Thiết lập kiểu đường viền
+    + none
+    + solid
+    + dotted
+    + dashes
+    + double
+    - border-color: Xác định màu sắc của đường viền.
+    - border-radius: Định nghĩa độ cong của góc đường viền.
+
+    $Chu y:
+    - border-top-width
+    - border-left-width
+    - border-right-width
+    - border-bottom-width
+
+    - border-top-style
+    - border-left-style
+    - border-right-style
+    - border-bottom-style
+
+    - border-top-color
+    - border-left-color
+    - border-right-color
+    - border-bottom-color
+
+    thuoc tinh gop:
+    - border: width style color;
+    */
+
+.box {
+  margin: auto;
+  padding: 10px 20px;
+  border-width: 2px;
+  border-style: solid dashed dotted double;
+  border-color: blue red green yellow;
+  border-radius: 4px;
+}
+
+.content {
+  border: 2px solid red;
+}
+
+.demo {
+  color: green;
+  border: 2px dotted currentColor;
+}

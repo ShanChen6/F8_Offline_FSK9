@@ -1,0 +1,25 @@
+/* 
+    Thuoc tinh overflow: xu li noi dung bi tran
+    - visible: mac dinh
+    - hidden: an 
+    - scroll: tao thanh cuon
+    - auto: tao thanh cuon
+*/
+
+/* 
+  chúng ta có thể ẩn thanh cuộn bằng cách:
+  overflow-x, overflow-y: hidden
+*/
+
+.box {
+  padding: 10px 20px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+  overflow: auto;
+}
+
+/* Tim hieu:
+- margin
+- padding
+- box model */

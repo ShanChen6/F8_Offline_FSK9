@@ -1,0 +1,6 @@
+// Dinh nghia cac mixin tuong ung voi cac breakpoint
+@mixin screenMobile {
+    @media screen and (max-width: 575px) {
+        @content;
+    }
+}

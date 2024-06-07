@@ -1,0 +1,99 @@
+/* 
+font-family: thay doi font chu trong van ban
+=> font-family: tenfont1, tenfont2, ...
+- chay lan luot, nhan font nao thi dung lai font do
+- 1 so luu y:
++ ten fon co khoang trang thi phai them vao cap ''
++ trong thuoc tinh font family se co cac gia tri dai dien cho ho font
+* serif: ho co chan
+* sans-serif: ho khong co chan
+* web thuong su dung font khong chan
+*/
+
+/* 
+Text-decoration: thay doi gach ngang o van ban
+- none --> khong co gach ngang
+- underline --> gach duoi
+- overline --> gach tren
+- line-through --> gach giua
+*/
+
+/* 
+text-transform: bien doi kieu chu
+- none --> khong co kieu chu
+- uppercase --> kieu chu hoa
+- lowercase --> kieu chu thuong
+- capitalize --> ki tu dau moi tu viet hoa (vd: Shan Chen)
+*/
+
+/* 
+letter-spacing: khoang cach moi ki tu
+word-spacing: khoang cach giua moi tu
+0 la gia tri mac dinh
+*/
+
+/* 
+text-align: can chinh van ban theo chieu ngang
+- left -->trai
+- right --> phai
+- center --> giua
+- justify --> can deu 2 ben
+*/
+@font-face {
+  font-family: "SVM fontbox";
+  src: url("./fonts/SVN-Fontbox-Boathouse-Filled.otf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato-Italic.normalttf");
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Lato;
+  src: url("./fonts/Lato-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  text-decoration: underline blue;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.box {
+  border: 1px solid red;
+  word-wrap: break-word;
+  /* word-break: break-all; */
+}
+
+.content {
+  text-align: justify;
+  text-align-last: center; /* can chinh dong cuoi cung*/
+}

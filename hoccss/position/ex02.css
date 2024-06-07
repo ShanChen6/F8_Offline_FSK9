@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  display: none;
+}
+
+.model-container input[type="checkbox"]:checked ~ div {
+  display: block;
+  /* background-color: white; */
+}
+
+.box-wrap {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.box {
+  width: auto;
+  height: auto;
+  border: 1px solid red;
+  background-color: white;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 1;
+}

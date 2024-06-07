@@ -1,0 +1,35 @@
+/* 
+    1. Phan tu gia:
+    - cu phap: selector::tenphantu
+    - before --> them phan tu phia truoc the html 
+    - after --> them phan tu phia sau the html
+    => phai co thuoc tinh content thi phan tu gia moi co hieu luc . Thuoc kieu inline.
+    - first-letter --> Chọn ký tự đầu tiên trong một phần tử và cho phép bạn tạo kiểu cho ký tự đó.
+    - first-line --> Chọn dòng đầu tiên trong một phần tử và cho phép bạn tạo kiểu cho dòng đó.
+    - selection --> boi den phan tu
+    - placeholder --> thay doi lai placeholder cho form
+*/
+
+.title::before {
+  content: "a";
+}
+.title::after {
+  content: "b";
+}
+.title::first-letter {
+  color: red;
+}
+p::first-letter {
+  color: blue;
+  background-color: blueviolet;
+}
+p::first-line {
+  color: yellowgreen;
+}
+p::selection {
+  background-color: blueviolet;
+  color: orange;
+}
+input::placeholder {
+  color: red;
+}

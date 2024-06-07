@@ -1,0 +1,30 @@
+/* 
+    Lop gia hay con goi la trang thai (state)
+    cu phap: selector:tenlopgia 
+    - hover-->
+    - active--> 
+    - focus--> chi hoat dong voi form hoac the html co thuoc tinh tabindex
+    - not 
+    - first-child
+    - last-child
+    - first-of-type
+    - last-of-type
+    - nth-child
+    - nth-of-type
+    - checked
+    - disabled
+*/
+
+h1:hover {
+  color: red;
+}
+h1:active {
+  color: blue;
+}
+input:focus::placeholder {
+  background-color: gold;
+  color: red;
+}
+h1:focus {
+  background-color: greenyellow;
+}

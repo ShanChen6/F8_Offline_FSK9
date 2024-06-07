@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form không được lồng vào nhau -->
+    <!-- <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post"
+    >
+      <div>
+        <input type="text" name="fullName" placeholder="Họ và tên" />
+      </div>
+      <div>
+        <input type="text" name="email" placeholder="email" />
+      </div>
+      <button>Gửi</button>
+    </form> -->
+
+    <form action="">
+      <div>
+        <!-- 
+            - for trong label cần trùng với id của thẻ input
+            - readonly chỉ được đọc. server vẫn nhận được
+            - disabled không cho người dùng nhập vào. server không nhận được
+            - required là bắt buộc phải nhập vào
+            - placeholder là giá trị mặc định khi người dùng chưa nhập vào
+            - value là giá trị mặc định khi người dùng chưa nhập vào
+            - minlength là độ dài tối thiểu
+            - maxlength là độ dài tối đa
+        -->
+        <label for="fullname">Họ và tên</label>
+        <input
+          type="text"
+          name="fullName"
+          id="fullname"
+          placeholder="Họ và tên"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Mật khẩu</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="mật khẩu"
+          required
+        />
+      </div>
+      <div>
+        <label>Avatar</label>
+        <input type="file" name="hinh_anh" />
+      </div>
+      <div>
+        <label>Giới tính</label>
+        <label>
+          <input type="radio" name="gender" value="0" />Không biết
+        </label>
+        <label> <input type="radio" name="gender" value="0" checked />Nam</label
+        ><label> <input type="radio" name="gender" value="0" />Nữ </label>
+      </div>
+      <div>
+        <label>Nguồn</label>
+        <label>
+          <input type="checkbox" name="source" value="website" /> Website
+        </label>
+        <label>
+          <input type="checkbox" name="source" value="facebook" /> Facebook
+        </label>
+        <label>
+          <input type="checkbox" name="source" value="google" /> Google
+        </label>
+      </div>
+      <div>
+        <label for="birthday">Ngày sinh</label>
+        <input
+          type="date"
+          name="birthday"
+          id="birthday"
+          placeholder="Ngày sinh"
+          required
+        />
+      </div>
+      <div>
+        <label for="lbl-price">Giá</label>
+        <input type="range" name="price" id="lbl-price" value="0" />
+      </div>
+      <div>
+        <label for="message">Tin nhắn</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Nội dung tin nhắn..."
+          styles="resize: none"
+        ></textarea>
+      </div>
+      <div>
+        <label for="provinces">Tỉnh / Thành phố</label>
+        <select name="provinces" id="provinces" multiple>
+          <option value="0" selected>Chọn Tỉnh / Thành Phố</option>
+          <option value="1">Hà Nội</option>
+          <option value="2">Đà Nẵng</option>
+          <option value="3">Thành phố Hồ Chí Minh</option>
+        </select>
+      </div>
+    </form>
+    <!-- Gửi lên server -->
+    <button type="submit">Gửi</button>
+    <!-- Không có tác dụng gì -->
+    <button type="button">Nút</button>
+    <!-- reset loại toàn bộ form, hạn chế sử dụng -->
+    <button type="reset">Nhập lại</button>
+  </body>
+</html>

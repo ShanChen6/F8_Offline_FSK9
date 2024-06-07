@@ -1,0 +1,76 @@
+/* 
+1. color: Định nghĩa màu sắc của văn bản 
+=> color: ma_mau
++ ten mau tieng anh
++ rgb
++ hsl
++ hexa
+*/
+
+/* 
+Color Opacity: Do trong suot cua mau
+
+luu y: trong cac thuoc tinh css luon co cac gia tri ke thua
+- initial --> gia tri mac dinh cua trinh duyet
+- inherit -->ke thua gia tri cua thanh phan cha
+- unset -->
+
+*/
+
+/* 
+2. font-size: thay doi co chu
+=> font-size: value + unit
+- unit(don vi):
++ px --> don vi tuyet doi
++ pt --> don vi tuyet doi => 1pt = 1.3px
++ em --> don vi tuong doi (ty le voi thanh phan cha)
++ rem --> don vi tuong doi (ty le voi gia trij mac dinh cua trinh duyet)
++ % --> don vi tuong doi (ty le voi thanh phan cha)
+*/
+/* Nen su dung don vi em, don vi tuong doi */
+
+/* 
+3. thuoc tinh line-height: thay doi chieu cao cua dong (dan dong)
+=> line-height: value
+*/
+
+html {
+  font-size: 10px; /* nen de font size mac dinh la 10px*/
+}
+
+body {
+  font-size: 2.4rem;
+}
+
+h1 {
+  color: #0a5026; /* hexa */
+  font-size: 1.2em;
+}
+
+.content {
+  color: rgb(26, 11, 161); /* rgb */
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 16px;
+}
+
+.content:hover {
+  color: initial;
+}
+
+.content2 {
+  color: rgba(200, 15, 46, 0.4);
+  font-size: 16pt;
+}
+
+.box {
+  font-size: 1.2em;
+}
+
+.content3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.2em;
+}

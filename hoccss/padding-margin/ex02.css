@@ -1,0 +1,75 @@
+/* 
+    Margin: tạo khoảng cách bên ngoài border
+    - margin: value
+    - margin: value1, value2
+    - margin: value1, value2, value3
+    - margin: value1, value2, value3, value4
+
+    Thuộc tính mở rộng:
+    - margin-top:
+    - margin-right:
+    - margin-bottom:
+    - margin-left:
+*/
+
+/* 
+    Lưu ý:
+    - đơn bị % tỷ lệ theo width của thẻ cha
+    - thẻ inline không hoạt động với margin-top và margin-bottom
+    - hỗ trợ giá trị âm và auto
+*/
+
+/* 
+    margin-inline: auto; => căn giữa
+
+    margin-left: auto;
+    margin-right: auto;
+    => căn giữa
+
+    margin-block: 30px; => 
+
+    margin-top: a;
+    margin-bottom: b;
+    => a,b dương lấy giá trị lớn hơn
+    => a,b cùng âm lấy giá trị nhỏ
+    => a,b khác dấu thì cộng dồn ( ví dụ: 30px và -20px thì kết quả là 10px )
+*/
+
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.box {
+  border: 1px solid red;
+  width: 200px;
+  margin: 30px;
+  margin-bottom: 20px;
+}
+
+.box-2 {
+  border: 1px solid green;
+  margin-top: 30px;
+}
+
+/* 
+    Lồng nhau:
+    - thêm 1 border 
+*/
+.content {
+  background: green;
+  color: white;
+  /* border: 1px solid transparent; */
+  /* display: inline-block;
+  width: 100%; */
+  /* display: flex; */
+  /* position: absolute;
+  width: 100%; */
+  float: left;
+  width: 100%;
+}
+
+.content h2 {
+  margin: 30px 0;
+}

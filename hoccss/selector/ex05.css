@@ -1,0 +1,14 @@
+#red:checked ~ label[for="red"],
+#red:checked ~ p {
+  color: red;
+}
+
+#green:checked ~ label[for="green"],
+#green:checked ~ p {
+  color: green;
+}
+
+#blue:checked ~ label[for="blue"],
+#blue:checked ~ p {
+  color: blue;
+}

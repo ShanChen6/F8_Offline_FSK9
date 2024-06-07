@@ -1,0 +1,45 @@
+/* 
+    Float: trôi các thẻ html về các phía trái hoặc phải của thẻ cha
+    - none
+    - left
+    - right
+*/
+
+.box {
+  border: 1px solid red;
+  width: 400px;
+  margin: 30px auto;
+  overflow: auto;
+}
+
+.box .item-1 {
+  width: 20%;
+  height: 100px;
+  background: green;
+  float: left;
+}
+.box .item-2 {
+  width: 20%;
+  height: 100px;
+  background: red;
+  float: left;
+}
+.box .item-3 {
+  width: 20%;
+  height: 100px;
+  background: blue;
+  float: left;
+}
+
+/* 
+    Thuộc tính clear: ngăn không cho các thẻ html bị trôi bởi float
+    - left
+    - right
+    - both
+Điều kiện: chỉ hoạt động với block. 1 thẻ có thuộc tính clear thì những thẻ sau không
+*/
+
+.content {
+  clear: both;
+}
+

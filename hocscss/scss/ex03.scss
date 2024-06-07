@@ -1,0 +1,109 @@
+//Responsive 
+// @media screen and (max-width: 991) {
+//     .header {
+//         padding: 30px 0;
+//     }
+// }
+// @media screen and (max-width: 767px) {
+//     .header {
+//         padding: 30px 0;
+//     }
+// }
+
+// Toan tu trong SCSS
+// 1. So hoc: +, -, *, /, %(chia lay du) 
+// 2. Toan tu so sanh: ==, >, <, >=, <= !=
+// 3. Toan tu ket hop: and, or, not
+// vi du: a >= 5 and a <= 10
+
+//Kieu du lieu:
+// 1. string: chuoi
+// 2. number: so 
+// 3. cac thuoc tinh va gia tri cua CSS
+// 4. Boolean: true, false
+// 5. Lists
+// 6. Map
+
+// $a: 'F8'; //string
+// $b: 10; //number
+// $c: true; //Boolean
+// $sizes: 10px, 20px, 30px; //lists
+
+
+// .box {
+//     font-family: $a;
+//     font-size: $b + 10px;
+// }
+
+// Cau lenh re nhanh: @if @else
+// Cu phap 1: @if dieukien { Code }
+// Cu phap 2: @if dieukien { Code } @else { Code }
+
+// @if $b >=11 {
+//     .box {
+//         color: red;
+//     }
+// } @else {
+//     .item {
+//         color: green;
+//     }
+// }
+
+// Vong lap
+// 1. @for
+// 2. @each
+
+// $number: 12;
+// @for $i from 1 through $number {
+//     .column-#{$i} {
+//         $width: 30*$i;
+//         @if $i % 2 == 0 {
+//             $width: $width + 0%;
+//         } @else {
+//             $width: $width + px;
+//         }
+//         width: $width;
+//     }
+// }
+
+// $sizes: 20px, 40px, 60px, 100px;
+// $length: length($sizes);
+// $count: 0;
+// @each $sizes in $sizes {
+//     $count: $count + 1;
+//     .item-#{$sizes} {
+//         @if ($count == $length) {
+//             width: 0;
+//         } @else {
+//             width: $sizes * 2;
+//         }
+//     }
+// }
+
+
+// $sizes: (small, 20px, normal), (medium, 40px, 600), (large, 80px, 800);
+
+// @each $name, $size, $weight in $sizes {
+//     .item-#{$name} {
+//         font-size: $size;
+//         font-weight: $weight;
+//     }
+// }
+
+// Variable, import, cu phap long, mixin
+
+$breakpoint: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+@each $name, $size in $breakpoint {
+    @media screen and (min-width: #{$size}) {
+        .col-#{$name} {
+            width: 100%;
+        }
+    }
+}

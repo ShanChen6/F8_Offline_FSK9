@@ -1,0 +1,41 @@
+.songs {
+  width: 300px;
+  margin: 30px auto;
+  counter-reset: song-item;
+}
+
+.songs h2 {
+  display: flex;
+  counter-increment: song-item;
+}
+
+.songs h2::before {
+  content: "#" counter(song-item);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: green;
+  color: #fff;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.songs .children {
+  margin-left: 25px;
+  counter-reset: song-children;
+}
+
+.songs .children h2 {
+  counter-increment: song-children;
+}
+
+.songs .children h2::before {
+  content: counter(song-item) "." counter(song-children);
+}
+/* 
+    1. khởi tạo bộ đếm: counter-reset
+    2. bắt đầu đếm: counter-increment
+    3. hiển thị kết quả đếm: counter
+*/

@@ -1,0 +1,56 @@
+/* 
+    selector: not(selector2)
+*/
+
+/* ul li:not(.active) {
+  color: red;
+} */
+
+/* Chon thanh phan con dau tien */
+/* ul li:first-child {
+  color: blue;
+} */
+
+/* Chon thanh phan con cuoi cung */
+/* ul li:last-child {
+  color: green;
+} */
+
+/* chon thanh phan cung kieu dau tien */
+/* ul li:first-of-type {
+  color: blue;
+} */
+
+/* chon thanh phan cung kieu cuoi cung */
+/* ul li:last-of-type {
+  color: brown;
+} */
+
+/* 
+- chon phan tu con thu n trong mot phan tu cha 
+- dem tu phan tu dau tien
+*/
+/* ul li:nth-child(2n + 2) {
+  color: red;
+}
+
+ul li:nth-of-type(5) {
+    color: blue;
+} */
+
+.checkbox input:checked ~ span {
+  color: red;
+}
+
+.checkbox input:disabled ~ span {
+  color: gray;
+}
+
+.checkbox input:checked:disabled ~ span {
+  color: green;
+}
+
+.name:valid {
+  color: green;
+  background-color: yellow;
+}

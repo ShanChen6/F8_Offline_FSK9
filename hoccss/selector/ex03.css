@@ -1,0 +1,12 @@
+.box,
+.content {
+  background-color: gainsboro;
+}
+
+.box {
+  color: red;
+}
+
+.content {
+  color: blue;
+}

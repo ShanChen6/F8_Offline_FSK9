@@ -1,0 +1,125 @@
+/* 
+    Thuoc tinh animation: 
+    - Tao hieu ung phuc tap
+    - viet kich ban cho hieu ung
+    - su dung @keyframes
+*/
+
+/* 
+@keyframes tenkeyframes {
+    0% {
+
+    }
+    value1% {
+
+    }
+    value2% {
+
+    }
+    valuen% {
+
+    }
+    100% {
+
+    }
+
+    Cu phap cua animation:
+    - animation-name: tenkeyframes
+    - animation-duration: thoi gian hoan thanh hieu ung
+    - animation-timing-function: giong transition
+    - animation-delay: thoi gian truoc khi hieu ung chay
+    - animation-iteration-count: so luong chay hieu ung (infinite: chay vo han)
+
+    => animation: gop tat ca cac thuoc tinh tren
+*/
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin: 30px auto;
+  position: relative;
+}
+
+.box span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: green;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 100%;
+    top: 0;
+    translate: -100%;
+  }
+  50% {
+    /* scale: 1.5; */
+    left: 100%;
+    top: 100%;
+    translate: -100% -100%;
+  }
+  75% {
+    left: 0;
+    top: 100%;
+    translate: 0 -100%;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    /* translate: -100%; */
+  }
+}
+
+.box-2 {
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid green; */
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+
+.box-2 span {
+  display: flex;
+  width: 20px;
+  height: 100px;
+  margin: 20px 10px;
+  background: red;
+  border-radius: 4px;
+  /* animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
+  animation: wave 0.8s ease-in-out infinite;
+}
+
+.box-2 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.box-2 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.box-2 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes wave {
+  50% {
+    height: 50px;
+  }
+}

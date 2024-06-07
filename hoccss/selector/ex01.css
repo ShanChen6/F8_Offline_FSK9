@@ -1,0 +1,38 @@
+/*
+css tất cả các thuộc tính
+* {
+  color: red;
+}
+ */
+
+/* #title {
+  color: blue;
+}
+.sub-title {
+  color: red;
+}
+h3 {
+  color: blueviolet;
+} */
+
+/* 
+css thuộc tính title nằm trong box
+.box .title {
+  color: blue;
+} */
+
+/* css thuộc tính title là con của thuộc tính box */
+/* .box > .title {
+  color: blueviolet;
+} */
+
+/* .menu > li > a {
+  color: red;
+} */
+
+/* css all thuoc tinh cung the
+    tenthe.tenclass#tenid
+*/
+div.content {
+  background-color: lightblue;
+}

@@ -1,0 +1,26 @@
+/* 
+    Thu tu do uu tien:
+    0. !important
+    1. inline
+    2. id
+    3. class
+    4. tag
+
+    - Pham vi tac dong cang nho, do uu tien cang cao
+
+    - Thu tu: sau uu tien cao hon truoc
+    - selector chi tiet: do uu tien cao hon
+*/
+
+.box {
+  color: green;
+}
+
+#content {
+  color: blueviolet;
+}
+
+div {
+  color: red !important;
+  background: yellow;
+}

@@ -1,0 +1,31 @@
+/* 
+Selector: ~
+- chon the html ngang hang va dung sau
+- dieu kien: ngang hang va thuoc 1 cha
+
+Selector: +
+- Chon the html ngang hang va dung lien sau
+- dieu kien: ngang hang va thuoc 1 cha
+
+Selector: ,
+- chon cac selectors co cung noi dung
+- cu phap: selector1, selector2, selector3,...
+
+css se chay tu tren xuong duoi
+*/
+
+p ~ h2 {
+  color: red;
+}
+
+p ~ div h2 {
+  background-color: brown;
+}
+
+p + h2 + h2 {
+  color: green;
+}
+
+ul > li {
+  color: green;
+}

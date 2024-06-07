@@ -1,0 +1,29 @@
+/* 
+    box-shadow: do bong cho khoi
+    Cu phap:
+    box-shadow: h-offset v-offset blur(do mo) spread(kich thuoc) color;
+*/
+/* 
+    text-shadow: do bong van ban
+    cu phap:
+    text-shadow: h-offset v-offset blur(do mo) color;
+*/
+.box {
+  width: 300px;
+  height: 300px;
+  background: green;
+  margin: 30px auto;
+  box-shadow: 5px 5px yellow, 10px 10px 0px 0px red, 15px 15px green,
+    20px 20px blueviolet;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black,
+    -1px -1px 1px black, 1px 1px 1px black, 1px -1px 1px black,
+    -1px 1px 1px black, -1px -1px 1px black;
+}
+
+

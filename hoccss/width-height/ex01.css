@@ -1,0 +1,38 @@
+/* 
+    width: thiet lap chieu rong
+    height: thiet lap chieu cao
+    ==> chi ap dung voi the block, neu muon the inline thiet lap duoc width, height 
+    --> chuyen thanh block hoac inline-block (dung thuoc tinh display)
+*/
+
+/* 
+    Don vi: px, em, rem
+    % --> ty le voi kich thuoc cua the cha
+    vw --> viewport width
+    vh --> viewport height
+*/
+.content {
+  width: 100vw;
+  height: 50vh;
+  border: 2px solid red;
+}
+
+.link {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: 2px solid yellow;
+}
+
+
+/* 
+    Trong the inline co 2 loai:
+    - non-replace: chieu rong phu thuoc vao noi dung cua the
+    --> width, height khong thiet lap duoc
+    - replace: noi dung phu thuoc vao nguoi dung hoac phu thuoc vao yeu to ben ngoai
+    + img: phu thuoc vao link anh
+    + video: phu thuoc vao link video
+    + iframe: phu thuoc vao link trang website
+    + input: phu thuoc vao du lieu nguoi dung
+    ==> bi thay the, trinh duyet se tu dong chuyen thanh inline-block
+*/

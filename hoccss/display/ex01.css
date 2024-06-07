@@ -1,0 +1,29 @@
+/* 
+    Thuộc tính display:
+    - block
+    - inline-block
+    - inline
+    - none ==> Ẩn thẻ html (mất khong gian hiển thị)
+    
+    Thuộc tính visibility: ẩn/hiện thẻ html ( khi ẩn không làm mất không gian )
+    - visible
+    - hidden
+
+    Thuộc tính opacity: Làm mờ thẻ html (nhận từ 0 đến 1 )
+
+    Thuộc tính filter: 
+    - opacity(number)
+    - grayscale(number)
+    - blur(number + unit)
+*/
+
+h1 {
+  /* display: none; */
+  /* visibility: hidden; */
+  /* opacity: 0.5; */
+  filter: opacity(0.5);
+}
+
+img:hover {
+  filter: blur(1px);
+}

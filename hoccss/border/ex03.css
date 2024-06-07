@@ -1,0 +1,44 @@
+/* 
+    Border-radius: bo goc
+    - hinh vuong co border-radius tu 50% tro len tao thanh hinh tron
+   
+    * thuoc tinh mo rong:
+    - border-top-left-radius:
+    - border-top-right-radius:
+    - border-bottom-right-radius:
+    - border-bottom-left-radius:
+    */
+
+.box {
+  margin: auto;
+  padding: 10px 20px;
+  border: 5px solid red;
+  border-radius: 20px;
+}
+
+.btn {
+  margin: 20px;
+  /* padding: 10px 10px; */
+  background: yellowgreen;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 35px;
+  border-radius: 99px; /* border radius nên để >= height */
+}
+
+.btn-outline {
+  margin: 20px;
+  /* padding: 10px 10px; */
+  background: transparent;
+  color: greenyellow;
+  border: 2px solid currentColor;
+  width: 100px;
+  height: 35px;
+  border-radius: 99px;
+}
+
+.btn-outline:hover {
+  background: greenyellow;
+  color: white;
+}

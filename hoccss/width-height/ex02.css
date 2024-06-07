@@ -1,0 +1,23 @@
+/* 
+    max-width: chieu rong toi da
+    min-width: chieu rong toi thieu
+    
+
+    min-height:
+    max-height:
+    tuong tu...
+*/
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+.content {
+  background: yellowgreen;
+  border: 1px solid green;
+  /* width: 400px; */
+  min-width: 100px;
+  max-width: 300px;
+}

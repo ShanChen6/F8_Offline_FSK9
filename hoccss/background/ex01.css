@@ -1,0 +1,39 @@
+/* 
+    Background CSS:
+    - background-color
+    - background-image
+    - background-repeat
+        + repeat --> mac dinh
+        + repeat-x --> lap theo chieu ngang
+        + repeat-y --> lap theo chieu doc
+        + no-repeat --> khong lap
+    - background-position: thay doi cac vi tri cua anh nen
+        + background-position: 0 0; mac dinh vi tri tren cung ben trai
+        + truc x: left, center, right, don vi tuyet doi, tuong doi (%)
+        + truc y: top, center, bottom, don vi tuyet doi, tuong doi (%)
+    - background-size: thay doi kich thuoc cua anh nen
+        + cover: hình nền sẽ được co giãn sao cho che phủ toàn bộ khu vực của phần tử
+        + contain: hình nền sẽ được co giãn sao cho vừa với khu vực của phần tử, nhưng không bị cắt bỏ hay kéo dài quá mức.
+    - background-attachment: co dinh hoac keo thanh cuon
+        + scroll
+        + fixed
+    - background --> Thuoc tinh gop cac thuoc tinh tren
+    + color image repeat position / size attachment
+*/
+
+/* .box {
+  height: 100vh;
+  background-color: rgb(17, 196, 91);
+  background-image: url(https://fastly.picsum.photos/id/360/600/400.jpg?hmac=RWbT381yiGwcuoZURREljRcfruKeYYmUgnCNHYlDiYI);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  background-attachment: scroll;
+} */
+
+.box {
+  height: 100vh;
+  background: blue
+    url(https://fastly.picsum.photos/id/360/600/400.jpg?hmac=RWbT381yiGwcuoZURREljRcfruKeYYmUgnCNHYlDiYI)
+    no-repeat 0 0 / 500px;
+}

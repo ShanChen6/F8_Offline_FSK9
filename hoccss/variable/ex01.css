@@ -1,0 +1,28 @@
+/* 
+    Bien: luu tru du lieu tam thoi trong bo nho RAM
+    1. bien toan cuc(global Variable)
+    - Khai bao trong :root
+    - su dung o khap moi noi ke tu sau vi tri khai bao
+
+    2. bien cuc bo (Local Variable)
+    - khai bao trong 1 selector cu the
+    - chi duoc su dung trong selector va cac selector con cua no
+
+    Luu y: bien trong css chi luu tru cac gia tri cua cac thuoc tinh css
+*/
+
+@import url(./variable.css);
+
+.content {
+  --font-size: 1.2rem;
+  --border-color: red;
+  padding: 10px 20px;
+  /* background: var(--primary-color); */
+  /* color: var(--secondary-color); */
+  font-size: var(--font-size);
+  border: 2px solid var(--border-color);
+}
+
+.content:hover {
+  --border-color: green;
+}

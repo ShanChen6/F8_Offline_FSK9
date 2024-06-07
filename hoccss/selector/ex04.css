@@ -1,0 +1,29 @@
+/* 
+    1.tenthe[tenthuoctinh] chon the html co element
+
+    2.tenthe[tenthuoctinh="giatri" chon the html co element va values
+
+    3.tenthe[href^="giatri"] chon the html co element bat dau bang values
+    ul li a[href^="https:...."]
+
+    4.tenthe[href$="giatri"] chon the html co element ket thuc bang ....
+    ul li a[href$="javascript"]
+
+    5. tenthe[href*="giatri"] chon the html co gia tri nam trong thuoc tinh
+    ul li a[href*="javascript.com"]
+
+    6.tenthe[href~="giatri"] chon the html co gia tri la word
+*/
+
+ul li a[target] {
+  color: red;
+}
+
+ul li a[href="https://fullstack.edu.vn/"]
+{
+  color: blue;
+}
+
+ul li a[title~="hello"] {
+  color: green;
+}

@@ -1,0 +1,115 @@
+/* 
+Flex=Flexible Box Module
+- kỹ thuật xây dựng các layout 1 cách linh hoạt
+- flex có 2 thành phần
++ Flex container (thẻ bọc)
++ Flex item (thẻ con)
+
+- Trục trong flex:
++ main: trục chính ( mặc định nằm ngang )
++ cross: vuông góc với trục chính
+==> có thể thay đổi hương của trục main
+ */
+
+/* 
+    1. Nhóm thuộc tính flex container
+    - display: flex ==> kích hoạt flex
+    - flex-direction ==> Chọn hướng cho trục chính
+    + row
+    + row-reverse
+    + column
+    + column-reverse
+
+    - justify-content: Căn chỉnh các item theo hướng song song với trục chính
+    + flex-start
+    + flex-end
+    + center: căn giữa
+    + space-between: dàn đều sang 2 bên, không có khoảng cách ở đầu
+    + space-around: dàn đều sang 2 bên, có khoảng cách ở đầu = 1/2
+    + space-evenly: giãn đều các item
+    + start: khách flex-start khi sử dụng reverse
+    + end
+
+    - align-item: căn chỉnh các item theo hướng song song với trục cross
+    + align-items: stretch: Chiều dài của item sẽ bằng chiều dài của cross axis.
+    + align-items: flex-start: Item được đặt ở điểm bắt đầu của cross start(trên cùng bên trái), và kích thước item không bị thay đổi.
+    + align-items: flex-end: Item được đặt ở điểm bắt đầu của cross end(dưới cùng bên trái)
+    + align-items: center: Item được đặt ở giữa điểm bắt đầu của cross start và điểm bắt đầu của cross end (ở giữa bên trái)
+    + align-items: baseline: Item sẽ được đặt dữ theo các ký tự thuộc item đó. Mục đích chính là căn chỉnh dữa liệu dòng văn bản của các item.
+
+
+    - flex-wrap: wrap các item khi kích thước lớn hơn container: 
+    + nowrap (mặc định): Không có gì thay đổi
+    + wrap: các items sẽ được bọc trọn trong container
+    + wrap-reverse
+
+    - align-content: căn chỉnh các hàng hoặc cột
+    ==> chỉ áp dụng khi có nhiều hàng hoặc cột
+    + strong 
+    + flex-start
+    + flex-end
+    + center: căn giữa
+    + space-between
+    + space-around
+    + space-evenly
+
+    - gap: thay đổi khoảng cách giữa các item
+    vd: gap: 10px; gap: 10px 20px;
+
+    -row-gap
+    -column-gap
+
+    2. Nhóm thuộc tính flex-item
+    - flex-grow: number ==> lấp đầy các item để bù vào vị trí còn trống của container theo tỷ lệ nhất dịnh
+    - flex-shrink: number ==> thiết lập tỷ lệ tự động co lại của item
+    - flex-basis: value + unit ==> thiết lập kích thước ban đầu cho flex-item
+    ==> Lưu ý: flex-basis bị chặn bởi max-min-width-height
+    - align-seft: căn chỉnh 1 item song song với trục cross
+    + strecth: 
+    + flex-start
+    + flex-end
+    + center: căn giữa
+    + baseline
+  */
+/* 
+  ==> flex: grow shrink basis
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 400px;
+  height: 500px;
+  border: 1px solid red;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  /* flex-wrap: wrap; */
+  align-content: stretch;
+  /* gap: 15px; */
+}
+
+.item {
+  background: green;
+  color: white;
+  padding: 15px;
+  border: 1px solid #fff;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex-basis: 100px; */
+  flex: 0.2 1;
+}
+
+.item:nth-child(3) {
+  /* padding: 30px 20px; */
+  /* flex-grow: 2; */
+  /* align-self: center; */
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
