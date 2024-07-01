@@ -1,0 +1,7 @@
+$bg-color: red;
+$-fontSize: 16px; //private member: bắt đầu bằng - hoặc _
+.footer {
+    padding: 30px 0;
+    background: $bg-color;
+    font-size: $-fontSize;
+}

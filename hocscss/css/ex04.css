@@ -1,0 +1,26 @@
+.header {
+  padding: 30px 0;
+  background: green;
+}
+
+.footer {
+  padding: 30px 0;
+  background: red;
+  font-size: 16px;
+}
+
+.header {
+  padding: auto;
+  background: blueviolet;
+}
+
+.products {
+  background: green;
+  color: product-header green;
+}
+
+.posts {
+  color: red;
+}
+
+/*# sourceMappingURL=ex04.css.map */

@@ -1,22 +1,3 @@
-@charset "UTF-8";
-/* 
-    Xay dung Grid System
-
-    Quy uoc:
-    .row ==> Flex Container
-    .col-{number} ==> Flex Item (number tu 1 => 12 )
-    .container ==> khung cua cac section (1200px)
-*/
-/* 
-    Responsive: Đi tu man hinh nho ( Mobile first )
-
-    <576px: .col-{number}
-    >=576px: .col-sm-{number}
-    >=768px: .col-md-{number}
-    >=992px: .col-lg-{number}
-    >=1200px: .col-xl-{number}
-    >=1400px: .col-xxl-{number}
-*/
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +14,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+}
+
+[class^=col-] {
+  padding: 0 10px 20px;
 }
 
 .col-1 {

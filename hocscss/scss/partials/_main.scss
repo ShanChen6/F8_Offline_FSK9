@@ -1,0 +1,7 @@
+@use "./variables";
+@forward "variables" as variables-*;
+//chuyển tiếp file vảiable để các file import file main sẽ được sử dụng các dữ liệu trong file variables
+
+.main {
+    color: variables.$primary-color;
+}

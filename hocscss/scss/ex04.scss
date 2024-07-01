@@ -1,0 +1,15 @@
+//Import bằng @use ==> Tự động tạo nameSpace là tên file
+
+@use "partials/header";
+@use "partials/footer";
+@use "./components/products/header" as product-header;
+
+.products {
+    background: header.$bg-color;
+    color: product-header header.$bg-color;
+}
+
+.posts {
+    color: footer.$bg-color;
+    // font-size: footer.$fontSize;
+}

@@ -64,18 +64,18 @@ var n = 1;
 
 var isPrime = true;
 if (n < 1 || n % 1 !== 0) {
-    isPrime = false;
+  isPrime = false;
 } else {
-    for (var i = 2; i < n; i++) {
-        if (n % i === 0) {
-            isPrime = false;
-            break;
-        }
+  for (var i = 2; i < n; i++) {
+    if (n % i === 0) {
+      isPrime = false;
+      break;
     }
+  }
 }
 
 if (isPrime) {
-    console.log(`${n} là số nguyên tố`);
+  console.log(`${n} là số nguyên tố`);
 } else {
-    console.log(`${n} không phải là số nguyên tố`);
+  console.log(`${n} không phải là số nguyên tố`);
 }
