@@ -14,7 +14,7 @@
 //   //   console.log("Bạn vừa nhả phím gì đó");
 //   //   console.log(e.key);
 //   if (e.key === "Enter") {
-//     document.body.style.background = "yellow";1
+//     document.body.style.background = "yellow";
 //   }
 //   if (e.key === "Escape") {
 //     document.body.style.background = null;
