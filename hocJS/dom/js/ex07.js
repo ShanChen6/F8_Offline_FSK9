@@ -20,3 +20,8 @@ menu.addEventListener("click", function (e) {
 document.addEventListener("click", function () {
   menu.style.display = "none";
 });
+document.addEventListener("keyup", function (e) {
+  if (e.key === "Escape") {
+    menu.style.display = "none";
+  }
+});
