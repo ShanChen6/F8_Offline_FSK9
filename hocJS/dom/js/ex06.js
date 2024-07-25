@@ -25,9 +25,8 @@
 // });
 
 var btn = document.querySelector(".btn");
-var offsetX,
-  offsetY,
-  drag = false;
+var offsetX = 0,
+  offsetY = 0;
 btn.addEventListener("mousedown", function (e) {
   if (e.which === 1) {
     offsetX = e.offsetX;
@@ -39,9 +38,9 @@ btn.addEventListener("mousedown", function (e) {
 document.addEventListener("mouseup", function () {
   document.removeEventListener("mousemove", handleDrag);
 });
-function handleDrag() {
+function handleDrag(e) {
   console.log("object");
-  btn.style.position = `absolute`;
-  btn.style.left = `${e.offsetX - offsetX}px`;
-  btn.style.top = `${e.offsetY - offsetY}px`;
+  //   btn.style.position = `absolute`;
+  btn.style.left = `${e.clientX - offsetX}px`;
+  btn.style.top = `${e.clientY - offsetY}px`;
 }
