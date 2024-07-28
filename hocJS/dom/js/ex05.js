@@ -32,6 +32,3 @@ fadeInBtn.addEventListener("click", function () {
     boxEl.style.opacity = 1;
   }, 500);
 });
-var css = {
-  transition: `display 4s allow-discrete`,
-};
