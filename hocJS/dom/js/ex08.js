@@ -38,8 +38,6 @@ var items = document.querySelectorAll(".parent-item");
 console.log(items);
 items.forEach(function (itemEl) {
   itemEl.addEventListener("click", function (e) {
-    // console.log(itemEl.lastElementChild);
-    // itemEl.lastElementChild.classList.remove("active");
     var active = document.querySelector(".active");
     if (active) {
       active.classList.remove("active");
