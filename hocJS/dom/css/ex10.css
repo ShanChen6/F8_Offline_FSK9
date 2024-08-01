@@ -9,8 +9,14 @@ img {
   height: auto;
 }
 
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
 .carousel .carousel-inner {
   display: flex;
+  transition: translate 0.4s ease;
 }
 
 .carousel .carousel-inner > * {
