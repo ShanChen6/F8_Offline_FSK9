@@ -10,6 +10,9 @@ progressBar.addEventListener("mousedown", function (e) {
     var offsetX = e.offsetX;
     var rate = (offsetX / progressBarWidth) * 100;
     progress.style.width = `${rate}%`;
+    clientXSpan = e.clientX;
+    offsetLeft = offsetX;
+    document.addEventListener("mousemove", handleDrag);
   }
 });
 item.addEventListener("mousedown", function (e) {
@@ -17,6 +20,7 @@ item.addEventListener("mousedown", function (e) {
   if (e.which === 1) {
     document.addEventListener("mousemove", handleDrag);
     clientXSpan = e.clientX;
+    offsetLeft = e.target.offsetLeft;
   }
 });
 document.addEventListener("mouseup", function () {
@@ -24,9 +28,10 @@ document.addEventListener("mouseup", function () {
 });
 
 var clientXSpan = 0;
-var a = 0;
+var offsetLeft = 0;
+
 function handleDrag(e) {
-  var spaceMove = e.offsetX - clientXSpan;
+  var spaceMove = e.clientX - clientXSpan + offsetLeft;
   var rate = (spaceMove / progressBarWidth) * 100;
   if (rate < 0) {
     rate = 0;
