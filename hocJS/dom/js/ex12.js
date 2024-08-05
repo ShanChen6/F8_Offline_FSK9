@@ -75,3 +75,13 @@ if (nextUlEl) {
 } else {
   root.append(h3);
 }
+
+// replaceChild
+var p = document.createElement("p");
+p.innerText = "hoc lap trinh qua kho";
+root.replaceChild(p, h1);
+root.append(h1);
+
+// removeChild
+root.removeChild(ul);
+root.append(ul);
