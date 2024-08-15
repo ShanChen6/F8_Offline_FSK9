@@ -12,7 +12,7 @@ class Person {
   static message = "hoc lap trinh tai f8";
   constructor(name, email) {
     console.log("Ham khoi tao");
-    console.log(name, email);
+    // console.log(name, email);
   }
   getName() {
     return this.name;
