@@ -14,8 +14,11 @@ class Person {
   age = 26;
   #income = 12000; //private property
   #data = ["ite1", "ite2", "ite3"];
+  static message = "hoc js khong kho";
+
   // phương thúc khởi tạo
   constructor() {}
+
   // phương thức khác
   #getName() {
     return this.name;
@@ -34,6 +37,11 @@ class Person {
   set latest(value) {
     this.#data.push(value);
   }
+  static getMessage() {
+    // return this.message;
+    // return new this().name;
+    console.log(this);
+  }
 }
 
 const person = new Person(); //instance
@@ -44,4 +52,23 @@ person.latest = "ite4";
 console.log(person.latest);
 
 // element.innerHTML ==> getter
-// element.
+// element.innerHTML = value ==> setter
+
+// console.log(Person.getMessage());
+
+class Counter {
+  name = "f8";
+  handleClick = () => {
+    console.log(this.name);
+  };
+  render() {
+    const h1 = document.createElement("h1");
+    h1.innerText = 0;
+    document.body.append(h1);
+    const btn = document.createElement("button");
+    btn.innerText = `click me`;
+    btn.addEventListener("click", this.handleClick);
+    document.body.append(btn);
+  }
+}
+new Counter().render();
