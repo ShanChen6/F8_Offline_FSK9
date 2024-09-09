@@ -1,0 +1,5 @@
+get: lấy toàn bộ
+post: tạo mới
+put: update toàn bộ
+patch: update 1 phần
+delete: xóa
